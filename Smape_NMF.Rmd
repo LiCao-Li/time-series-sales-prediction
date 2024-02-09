@@ -1,0 +1,28 @@
+
+```{r}
+data_smape<-read.csv('./time_series/projects/Actual_Predicted_trans_NMF.csv')
+data_smape
+```
+```{r}
+smape<-function(y,yhat,digits)
+  round(mean(abs(y-yhat)/((abs(y)+abs(yhat))/2)),3)
+smape_NMF<-list()
+for (i in 1:nrow(data_smape)){
+  smape_NMF[i]<-smape(y=as.numeric(data_smape[i,2:5]),yhat =as.numeric(data_smape[i,6:9]),3)
+}
+
+
+
+smape_NMF<-data.frame(matrix(unlist(smape_NMF), nrow=length(smape_NMF), byrow=T))
+colnames(smape_NMF)<-"SMAPE"
+data_smape<-cbind(data_smape,smape_NMF)
+mean(data_smape$SMAPE)
+data_smape
+
+#write.csv(data_smape,'./time_series/projects/Actual_Predicted_NMF_SMAPE.csv')
+```
+```{r}
+
+write.csv(data_smape,'./time_series/projects/Actual_Predicted_NMF_sMAPE.csv')
+```
+
