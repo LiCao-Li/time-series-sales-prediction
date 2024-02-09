@@ -1,6 +1,6 @@
 Time Series Sales Prediction
 
-This repository contains the code using NMF for a time series forecasting project aimed at predicting total sales for each of 935 individual stores for 4 weeks ahead. The project utilizes various models and techniques, including auto-ARIMA, ARFIMA, and hierarchical clustering approaches, to forecast sales and compare model performance using sMAPE loss.
+This repository contains the code for a time series forecasting project aimed at predicting total sales for each of 935 individual stores for 4 weeks ahead. The project utilizes various models and techniques, including auto-ARIMA, ARFIMA, and hierarchical clustering approaches, to forecast sales and compare model performance using sMAPE loss.
 
 Models and Techniques Used
 1. Auto-ARIMA with Singular Value Decomposition (SVD)
