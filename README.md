@@ -1,11 +1,13 @@
-#Time Series Sales Prediction
+Time Series Sales Prediction
+
 This repository contains the code and documentation for a time series forecasting project aimed at predicting total sales for each of 935 individual stores for 4 weeks ahead. The project utilizes various models and techniques, including auto-ARIMA, ARFIMA, and hierarchical clustering approaches, to forecast sales and compare model performance using sMAPE loss.
 
 Models and Techniques Used
-Auto-ARIMA with Singular Value Decomposition (SVD)
-Auto-ARIMA with Independent Component Analysis (ICA)
-Auto-ARIMA with Non-Negative Matrix Factorization (NMF)
-Hierarchical Time Series (HTS)
+1. Auto-ARIMA with Singular Value Decomposition (SVD)
+2. Auto-ARIMA with Independent Component Analysis (ICA)
+3. Auto-ARIMA with Non-Negative Matrix Factorization (NMF)
+4. Hierarchical Time Series (HTS)
+
 Results
 After thorough analysis and comparison of the different models and techniques, the following results were obtained:
 
